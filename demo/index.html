@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Easy back to Top | jquery plugin</title>
+
+	<!-- inline css here -->
+	<style>
+body {
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 82%;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+.container h1{
+	text-transform: uppercase;
+	color: #666;
+}
+.container p {
+    color: #666;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    text-align: justify;
+    font-weight: 400;
+}
+.backtotop{
+	background-color: rgba(0,0,0,0.5);
+	cursor:pointer;
+	color: #fff;
+	padding: 4px;
+	z-index: 100;
+}
+	</style>
+</head>
+<body>
+	<!-- start container here -->
+	<div class="container">
+		<h1>This is hadding title</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nihil sed magnam, eius sunt vero nobis sint exercitationem omnis voluptates facilis minima eaque at illum, rerum quidem impedit tempora veritatis error natus aut asperiores doloremque. Doloribus omnis explicabo quia. Laboriosam placeat, pariatur, a necessitatibus provident ipsum tempore quaerat deserunt maxime, enim, assumenda recusandae libero dolorem dolorum harum similique laborum iste sunt earum perferendis. Cupiditate error, sapiente doloremque! Fugit consequuntur exercitationem quae ea, cum facere nesciunt officiis nemo fugiat. Molestiae facilis delectus, atque nulla assumenda beatae eos, aspernatur quasi eaque explicabo architecto officiis, aliquid, harum porro nobis aliquam. Laborum, quis, earum?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nihil sed magnam, eius sunt vero nobis sint exercitationem omnis voluptates facilis minima eaque at illum, rerum quidem impedit tempora veritatis error natus aut asperiores doloremque. Doloribus omnis explicabo quia. Laboriosam placeat, pariatur, a necessitatibus provident ipsum tempore quaerat deserunt maxime, enim, assumenda recusandae libero dolorem dolorum harum similique laborum iste sunt earum perferendis. Cupiditate error, sapiente doloremque! Fugit consequuntur exercitationem quae ea, cum facere nesciunt officiis nemo fugiat. Molestiae facilis delectus, atque nulla assumenda beatae eos, aspernatur quasi eaque explicabo architecto officiis, aliquid, harum porro nobis aliquam. Laborum, quis, earum?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nihil sed magnam, eius sunt vero nobis sint exercitationem omnis voluptates facilis minima eaque at illum, rerum quidem impedit tempora veritatis error natus aut asperiores doloremque. Doloribus omnis explicabo quia. Laboriosam placeat, pariatur, a necessitatibus provident ipsum tempore quaerat deserunt maxime, enim, assumenda recusandae libero dolorem dolorum harum similique laborum iste sunt earum perferendis. Cupiditate error, sapiente doloremque! Fugit consequuntur exercitationem quae ea, cum facere nesciunt officiis nemo fugiat. Molestiae facilis delectus, atque nulla assumenda beatae eos, aspernatur quasi eaque explicabo architecto officiis, aliquid, harum porro nobis aliquam. Laborum, quis, earum?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nihil sed magnam, eius sunt vero nobis sint exercitationem omnis voluptates facilis minima eaque at illum, rerum quidem impedit tempora veritatis error natus aut asperiores doloremque. Doloribus omnis explicabo quia. Laboriosam placeat, pariatur, a necessitatibus provident ipsum tempore quaerat deserunt maxime, enim, assumenda recusandae libero dolorem dolorum harum similique laborum iste sunt earum perferendis. Cupiditate error, sapiente doloremque! Fugit consequuntur exercitationem quae ea, cum facere nesciunt officiis nemo fugiat. Molestiae facilis delectus, atque nulla assumenda beatae eos, aspernatur quasi eaque explicabo architecto officiis, aliquid, harum porro nobis aliquam. Laborum, quis, earum?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nihil sed magnam, eius sunt vero nobis sint exercitationem omnis voluptates facilis minima eaque at illum, rerum quidem impedit tempora veritatis error natus aut asperiores doloremque. Doloribus omnis explicabo quia. Laboriosam placeat, pariatur, a necessitatibus provident ipsum tempore quaerat deserunt maxime, enim, assumenda recusandae libero dolorem dolorum harum similique laborum iste sunt earum perferendis. Cupiditate error, sapiente doloremque! Fugit consequuntur exercitationem quae ea, cum facere nesciunt officiis nemo fugiat. Molestiae facilis delectus, atque nulla assumenda beatae eos, aspernatur quasi eaque explicabo architecto officiis, aliquid, harum porro nobis aliquam. Laborum, quis, earum?</p>
+	</div>
+	<!-- end container -->
+	<!-- jquery call here -->
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/back-to-top.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+		$("body").append("<div class='backtotop' title='back to top'>back to top</div>");
+			$('.backtotop').backtoTop({
+				'position' : 200, /*when you scroll your site buttom. 400px*/
+				'speed'    : 500, /*when you click the button then speed. 1000ms == 1s*/
+				'ShowHide' : 500  /*button show & hide animation speed. 1000ms == 1s*/
+			});
+	});
+
+	</script>
+</body>
+</html>
